@@ -33,5 +33,9 @@ RSpec.feature "Sessions", type: :feature do
 
       expect(page).to have_content("Bonkers")
     end
+
+    it "redirects users to login page if no name is entered" do
+      
+    end
   end
 end
