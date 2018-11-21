@@ -31,7 +31,7 @@ RSpec.feature "Sessions", type: :feature do
       fill_in "name", with: "Bonkers"
       click_button "login"
 
-      expect(page)
+      expect(page).to have_content("Bonkers")
     end
   end
 end
