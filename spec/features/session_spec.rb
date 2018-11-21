@@ -31,7 +31,7 @@ RSpec.feature "Sessions", type: :feature do
       fill_in "name", with: "Bonkers"
       click_button "login"
 
-      expect(page).to have_content("Bonkers")
+      expect(page).to have_text("Bonkers")
     end
 
     it "redirects users to login page if no name is entered" do
@@ -40,7 +40,7 @@ RSpec.feature "Sessions", type: :feature do
       fill_in "name", with: ""
       click_button "login"
 
-      expect(response).to redirect_to '/login'
+      expect(page).to
     end
   end
 end
