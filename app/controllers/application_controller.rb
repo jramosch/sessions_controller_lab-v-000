@@ -6,8 +6,5 @@ class ApplicationController < ActionController::Base
   def hello
     if session[:name].blank? && session[:name].nil?
       redirect_to "/login"
-    else
-      redirect_to "/"
-    end
   end
 end
