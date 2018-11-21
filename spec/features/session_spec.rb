@@ -21,4 +21,9 @@ RSpec.feature "Sessions", type: :feature do
     end
   end
 
+  describe "login page", type: :view do
+    before do
+      session.delete :name
+    end
+  end
 end
