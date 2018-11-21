@@ -36,6 +36,11 @@ RSpec.feature "Sessions", type: :feature do
 
     it "redirects users to login page if no name is entered" do
       session.delete :name
+      visit '/login'
+      fill_in "name", with: ""
+      click_button "login"
+
+      expect(response)
     end
   end
 end
