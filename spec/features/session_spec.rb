@@ -27,7 +27,9 @@ RSpec.feature "Sessions", type: :feature do
     end
 
     it "allows user to enter name in form and click 'login'" do
-
+      visit '/login'
+      fill_in "name", with: "Bonkers"
+      click_button "login"
     end
   end
 end
