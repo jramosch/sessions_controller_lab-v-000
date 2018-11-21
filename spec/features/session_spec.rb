@@ -40,7 +40,7 @@ RSpec.feature "Sessions", type: :feature do
       fill_in "name", with: ""
       click_button "login"
 
-      expect(response)
+      expect(response).to redirect_to '/login'
     end
   end
 end
