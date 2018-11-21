@@ -6,9 +6,13 @@ RSpec.feature "Sessions", type: :feature do
       session.delete :name
     end
 
-    it "shows login link if user is not logged in" do
+    it "has login link if user is not logged in" do
       visit '/'
       expect(page).to have_button("login")
+    end
+
+    it "text" do
+
     end
   end
 
