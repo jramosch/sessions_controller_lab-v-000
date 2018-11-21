@@ -26,10 +26,12 @@ RSpec.feature "Sessions", type: :feature do
       session.delete :name
     end
 
-    it "allows user to enter name in form and click 'login'" do
+    it "allows user to enter name in form and click 'login' and refers to user by name thereafter" do
       visit '/login'
       fill_in "name", with: "Bonkers"
       click_button "login"
+
+      expect(page)
     end
   end
 end
