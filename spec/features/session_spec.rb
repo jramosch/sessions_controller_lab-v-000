@@ -12,7 +12,7 @@ RSpec.feature "Sessions", type: :feature do
     end
 
     it "provides logout link if user is logged in" do
-      session[:name] = "Chewy"
+      
       visit '/'
       expect(page).to have_button("logout")
     end
