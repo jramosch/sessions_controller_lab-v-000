@@ -25,5 +25,9 @@ RSpec.feature "Sessions", type: :feature do
     before do
       session.delete :name
     end
+
+    it "allows user to enter name in form and click 'login'" do
+
+    end
   end
 end
