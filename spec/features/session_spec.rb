@@ -40,7 +40,7 @@ RSpec.feature "Sessions", type: :feature do
       fill_in "name", with: ""
       click_button "login"
 
-      expect(page).to
-    end
+      expect(page).to have_current_path(login_path)
+     end
   end
 end
