@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature "Sessions", type: :feature do
   describe "homepage", type: :view do
     before do
-      session[:name].delete
+      session.delete :name
     end
 
     it "shows login link if user is not logged in" do
