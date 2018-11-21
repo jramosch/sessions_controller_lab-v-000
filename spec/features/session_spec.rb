@@ -15,9 +15,9 @@ RSpec.feature "Sessions", type: :feature do
       visit '/login'
       fill_in "name", with: "Chewy"
       click_button "login"
-      
-      expect(page).to have_button("logout")
+
       expect(page).to have_content("Hi, Chewy.")
+      expect(page).to have_button("logout")
     end
   end
 
