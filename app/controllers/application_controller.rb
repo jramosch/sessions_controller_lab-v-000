@@ -4,10 +4,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def hello
-    if session[:name]
+    if session[:name].blank?
       redirect_to "/login"
     else
-      
+
     end
   end
 end
