@@ -35,6 +35,7 @@ RSpec.feature "Sessions", type: :feature do
     end
 
     it "redirects users to login page if no name is entered" do
+      session[:name] = ''
       
     end
   end
