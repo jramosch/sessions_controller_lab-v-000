@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "SessionsViews", type: :feature do
+RSpec.feature "SessionsPages", type: :feature do
   describe "homepage", type: :view do
     before do
       session.delete :name
